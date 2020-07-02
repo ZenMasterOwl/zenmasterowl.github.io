@@ -1,0 +1,283 @@
+body,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  color: rgba(255, 255, 255, 0.733);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  color: rgba(255, 255, 255, 0);
+  font-family: "Gochi Hand", cursive, "Indie Flower", cursive, "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  /* font-weight: bolder; */
+}
+
+body {
+  background-image: url(https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
+#projects img {
+  width: 40vw;
+  max-width: 400px;
+  opacity: 0.8;
+  box-shadow: -10px 10px rgba(58, 56, 56, 0.479);
+  border-radius: 5px;
+}
+#projects img:hover {
+  opacity: 0.9;
+}
+#words {
+  position: absolute;
+  width: 80vmin;
+  max-width: 700px;
+  opacity: 0.85;
+  animation-name: helloWorld;
+  animation-duration: 4s;
+}
+#world {
+  z-index: 98;
+  position: absolute;
+  width: 80vmin;
+  max-width: 700px;
+
+  opacity: 0.8;
+  margin-right: -50%;
+  animation-name: helloWorld;
+  animation-duration: 4s;
+}
+
+@keyframes helloWorld {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 80vmin;
+  }
+}
+
+#world:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 20s;
+  transition-delay: 400ms;
+}
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome-section h1 {
+  /* visibility: hidden; */
+  z-index: 99;
+  font-size: 28px;
+  font-family: "Rock Salt", cursive, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+img:hover {
+  opacity: 0.9;
+}
+
+#projects {
+  padding-top: 50px;
+}
+#footer-container {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  background-color: rgba(240, 248, 255, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-container img {
+  width: 50px;
+  opacity: 0.7;
+  margin: 20px;
+  /* box-shadow: -5px 5px rgba(48, 47, 47, 0.856); */
+  border-radius: 3px;
+}
+#footer-container img:hover {
+  opacity: 0.9;
+}
+#footer p {
+  display: block;
+  margin: 0px 10px;
+}
+
+#placeholder {
+  display: block;
+  margin-bottom: 0.7vw;
+  width: 40vw;
+  max-width: 400px;
+  height: 27.5vw;
+  max-height: 275px;
+  background-image: url("https://cdn.freecodecamp.org/platform/universal/fcc-twitter-1120X600-social-green.png");
+  background-size: contain;
+  filter: hue-rotate(70deg);
+  opacity: 0.8;
+  box-shadow: -10px 10px rgba(58, 56, 56, 0.479);
+  border-radius: 5px;
+}
+#navbar {
+  z-index: 200;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 75px;
+  justify-content: center;
+  background-image: url(https://images.pexels.com/photos/2117937/pexels-photo-2117937.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+#navbar-header {
+  /* position: fixed; */
+  width: 45vw;
+  height: 75px;
+}
+#navbar-header h1 {
+  margin: 10px 0px;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0);
+  text-shadow: -5px 5px rgba(58, 56, 56, 0.63);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(121, 118, 118, 0);
+  font-family: "Rock Salt", cursive, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#nav-links {
+  /* position: fixed; */
+  margin: -10px 0px;
+  display: flex;
+  width: 45vw;
+  height: 75px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#nav-links p {
+  margin: 0px 10px;
+  display: inline;
+  text-shadow: -5px 5px rgba(58, 56, 56, 0.63);
+  font-family: "Gochi hand", cursive, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#placeholder:hover {
+  opacity: 0.9;
+}
+#rl-rig {
+  filter: hue-rotate(340deg);
+}
+#tile-display {
+  width: 40vw;
+  max-width: 400px;
+  height: auto;
+  /* margin-top: 100px; */
+  /* background-color: rgb(8, 22, 24); */
+}
+
+#tile-display p {
+  /* padding: 10px 0px; */
+  margin: 10px 0px 50px 0px;
+  text-align: center;
+  text-shadow: -5px 5px rgba(58, 56, 56, 0.568);
+  background-color: rgba(150, 219, 236, 0.103);
+}
+.project-tile {
+  width: 90vw;
+  height: auto;
+  /* margin-top: 100px; */
+  /* background-color: rgb(37, 123, 134); */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome-section h1 {
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+  }
+  #words {
+    width: 98vw;
+    max-width: 700px;
+    animation-duration: 3s;
+  }
+  #world {
+    width: 98vw;
+    max-width: 700px;
+    animation-duration: 3s;
+  }
+  @keyframes helloWorld {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 98vw;
+    }
+  }
+  #projects img {
+    width: 80vw;
+    max-width: 400px;
+  }
+  #navbar-header h1 {
+    font-size: 24px;
+  }
+
+  #nav-links p {
+    font-size: 18px;
+  }
+
+  #placeholder {
+    width: 80vw;
+    max-width: 400px;
+    height: 55vw;
+    max-height: 275px;
+  }
+  #tile-display {
+    width: 80vw;
+    max-width: 400px;
+    height: auto;
+  }
+  .project-tile {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #welcome-section h1 {
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+  }
+  #words {
+    margin-top: 30px;
+    width: 90vmin;
+    max-width: 700px;
+    animation-duration: 3s;
+  }
+  #world {
+    margin-top: 30px;
+    width: 90vmin;
+    max-width: 700px;
+    animation-duration: 3s;
+  }
+  @keyframes helloWorld {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 90vmin;
+    }
+  }
+}
